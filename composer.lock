@@ -1,0 +1,172 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "f7b02eb5ce8191c0c008cd86b457a849",
+    "packages": [
+        {
+            "name": "phpoffice/phpexcel",
+            "version": "1.8.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/PHPOffice/PHPExcel.git",
+                "reference": "372c7cbb695a6f6f1e62649381aeaa37e7e70b32"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/PHPOffice/PHPExcel/zipball/372c7cbb695a6f6f1e62649381aeaa37e7e70b32",
+                "reference": "372c7cbb695a6f6f1e62649381aeaa37e7e70b32",
+                "shasum": ""
+            },
+            "require": {
+                "ext-xml": "*",
+                "ext-xmlwriter": "*",
+                "php": ">=5.2.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "PHPExcel": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL"
+            ],
+            "authors": [
+                {
+                    "name": "Maarten Balliauw",
+                    "homepage": "http://blog.maartenballiauw.be"
+                },
+                {
+                    "name": "Mark Baker"
+                },
+                {
+                    "name": "Franck Lefevre",
+                    "homepage": "http://blog.rootslabs.net"
+                },
+                {
+                    "name": "Erik Tilt"
+                }
+            ],
+            "description": "PHPExcel - OpenXML - Read, Create and Write Spreadsheet documents in PHP - Spreadsheet engine",
+            "homepage": "http://phpexcel.codeplex.com",
+            "keywords": [
+                "OpenXML",
+                "excel",
+                "php",
+                "spreadsheet",
+                "xls",
+                "xlsx"
+            ],
+            "time": "2015-05-01 07:00:55"
+        },
+        {
+            "name": "prggmr/xpspl",
+            "version": "v4.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/prggmr/XPSPL.git",
+                "reference": "7ae126e779429eb01dc163ba7184a5588589069e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/prggmr/XPSPL/zipball/7ae126e779429eb01dc163ba7184a5588589069e",
+                "reference": "7ae126e779429eb01dc163ba7184a5588589069e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache 2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Nickolas Whiting",
+                    "email": "prggmr@gmail.com",
+                    "homepage": "http://prggmr.com"
+                }
+            ],
+            "description": "Signals for PHP",
+            "homepage": "http://prggmr.com",
+            "keywords": [
+                "complex event processing",
+                "complex event processor",
+                "event",
+                "event dispatcher",
+                "event processor",
+                "events",
+                "ftp",
+                "http",
+                "io",
+                "non blocking",
+                "non blocking io",
+                "non-blocking ftp",
+                "signal",
+                "signal library",
+                "signals",
+                "sockets",
+                "tcp",
+                "time",
+                "timed event",
+                "timer",
+                "udp"
+            ],
+            "time": "2013-07-18 04:04:17"
+        },
+        {
+            "name": "zend/gdata",
+            "version": "1.12.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/alchemy-fr/gdata.git",
+                "reference": "4ae96d26cec159d74ced57c89ebdcde754ece35d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/alchemy-fr/gdata/zipball/4ae96d26cec159d74ced57c89ebdcde754ece35d",
+                "reference": "4ae96d26cec159d74ced57c89ebdcde754ece35d",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">5.2.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Zend_": "library"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "New BSD"
+            ],
+            "authors": [
+                {
+                    "name": "Zend Contributors",
+                    "homepage": "http://framework.zend.com/community/contributors"
+                }
+            ],
+            "description": "The Google Data APIs are a set of web services for read/write access to applications hosted by Google",
+            "homepage": "http://framework.zend.com/download/webservices",
+            "keywords": [
+                "gdata",
+                "zend"
+            ],
+            "time": "2013-01-30 15:31:21"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}

@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+    google.load("visualization", "1", {packages:["corechart"]});
+    google.setOnLoadCallback(drawChart);
+    function drawChart(){
+    var SignalsEmitted = [["Time in seconds", "Time in seconds"]];
+  // SignalsEmitted.push([2, 1.0013580322266E-5]);
+  // SignalsEmitted.push([4, 1.6927719116211E-5]);
+  // SignalsEmitted.push([8, 3.2901763916016E-5]);
+  // SignalsEmitted.push([16, 6.5803527832031E-5]);
+  // SignalsEmitted.push([32, 0.00011110305786133]);
+  // SignalsEmitted.push([64, 0.00021600723266602]);
+  // SignalsEmitted.push([128, 0.00043296813964844]);
+  // SignalsEmitted.push([256, 0.00085902214050293]);
+  // SignalsEmitted.push([512, 0.001723051071167]);
+  // SignalsEmitted.push([1024, 0.0034830570220947]);
+  // SignalsEmitted.push([2048, 0.0068731307983398]);
+  // SignalsEmitted.push([4096, 0.014059066772461]);
+  // SignalsEmitted.push([8192, 0.029222011566162]);
+  // SignalsEmitted.push([16384, 0.055971145629883]);
+  // SignalsEmitted.push([32768, 0.11135292053223]);
+  // SignalsEmitted.push([65536, 0.22104001045227]);
+  // SignalsEmitted.push([131072, 0.44405388832092]);
+  // SignalsEmitted.push([262144, 0.88575887680054]);
+  // SignalsEmitted.push([524288, 1.7755060195923]);
+  // SignalsEmitted.push([1048576, 3.5842969417572]);
+  // SignalsEmitted.push([2097152, 7.0723359584808]);
+  // SignalsEmitted.push([4194304, 14.07362985611]);
+  // SignalsEmitted.push([8388608, 28.187013864517]);
+  // SignalsEmitted.push([16777216, 56.552488088608]);
+  // SignalsEmitted.push([33554432, 113.77067780495]);
+  SignalsEmitted.push([67108864, 234.24808096886]);
+  SignalsEmitted.push([134217728, 466.36256098747]);
+  SignalsEmitted.push([268435456, 942.72732114792]);
+  SignalsEmitted.push([536870912, 1896.2795259953]);
+var SignalsEmitted_graph = google.visualization.arrayToDataTable(SignalsEmitted);
+var SignalsEmitted_chart = new google.visualization.LineChart(document.getElementById("SignalsEmitted"));
+SignalsEmitted_chart.draw(SignalsEmitted_graph, {title: ""});
+    }
+    </script>
+  </head>
+  <body>
+    <span style="margin: 10px 168px 0px;display: block;z-index: 25;position: absolute;font-family: Arial;font-size: 13px;font-weight: bold;">XPSPL v4.0 ~284K EPS to 5x10<sup>6</sup> at 3.512us per emit</span>
+    <div id="SignalsEmitted" style="width: 675px; height: 250px;"></div>  
+  </body>
+</html>

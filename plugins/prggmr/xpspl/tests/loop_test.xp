@@ -1,0 +1,32 @@
+<?php
+
+class Test extends \XPSPL\SIG_Routine {
+
+    public function __construct(/* ... */)
+    {
+        $this->_idle = new \XPSPL\Idle\Process(function(\XPSPL\Processor $processor){
+            if (isset($this->time) && (time() - 4) > $this->time ) {
+                echo PHP_EOL.$this->count.PHP_EOL;
+                echo time() - $this->time.PHP_EOL;
+                exit;
+            }
+            if (isset($this->last_runtime)) {
+                echo microtime(true) - $this->last_runtime.PHP_EOL;
+            }
+            if (!isset($this->time)) {
+                $this->time = time();
+                $this->count = 0;
+            }  else {
+                ++$this->count;
+            }
+            $this->last_runtime = microtime(true);
+        });
+    }
+
+    public function routine(\XPSPL\Routine $routine = null)
+    {
+        $routine->add_idle($this);
+    }
+}
+
+signal(new Test(), function(){});

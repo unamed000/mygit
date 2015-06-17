@@ -1,0 +1,115 @@
+ul.side-nav li{
+    line-height:44px;
+}
+
+ul.side-nav .logo{
+    height: 64px;
+    text-align:  center;
+    vertical-align: middle;
+    border-bottom: 1px solid #B0B0B0;
+}
+.row .col.content{
+    padding-top: 25px; !important;
+    padding-bottom: 25px; !important;
+}
+
+.main-text-color {
+    color: #EE6E73
+}
+
+.usual-text-color{
+    color : #FFFFFF;
+}
+.opposite-text-color{
+    color : #424242;
+}
+
+.main-bg-color {
+    background-color: #424242;
+}
+
+.usual-bg-color{
+    background-color : #EE6E73;
+}
+.opposite-bg-color{
+    background-color : #FFFFFF;
+}
+
+.unicode-font-family{
+    font-family:'Helvetica Neue',sans-serif!important;
+}
+
+@media (min-device-width: 992px) {
+    body{
+        height:100%; !important;
+        position:fixed !important;
+        top:0;
+        right:0;
+        bottom:0;
+        left:0;
+    }
+    .content{
+        height:1000px;
+    }
+}
+
+
+@media (max-device-height: 992px) {
+    body{
+        height:100%; !important;
+        width:100%; !important;
+        font-size:200%; !important;
+    }
+    .content{
+        height:1000px; !important;
+    }
+}
+
+
+
+/* label color */
+.opposite-form-color .input-field label {
+    color: #FFF;
+}
+/* label focus color */
+.opposite-form-color .input-field input:focus + label {
+    color: #FFF;
+}
+/* label underline focus color */
+.opposite-form-color .input-field input:focus {
+    border-bottom: 1px solid #FFF;
+    box-shadow: 0 1px 0 0 #FFF;
+}
+
+/* valid color */
+.opposite-form-color .input-field input.valid {
+    border-bottom: 1px solid #FFF;
+    box-shadow: 0 1px 0 0 #FFF;
+}
+/* icon prefix focus color */
+.opposite-form-color .input-field .prefix.active {
+    color: #FFF;
+}
+
+.opposite-form-color .input-field input.ng-dirty.ng-invalid{
+    border-bottom: 1px solid red;
+    box-shadow: 0 1px 0 0 red;
+}
+.opposite-form-color .input-field input.ng-dirty.ng-invalid:focus{
+    border-bottom: 1px solid red;
+    box-shadow: 0 1px 0 0 red;
+}
+
+.opposite-form-color .input-field .error-mess{
+    color: #424242;
+    font-size: 0.8em;
+
+}
+
+.input-field {
+    margin-bottom:10px; !important;
+}
+.input-field input {
+    margin-bottom: 0; !important;
+}
+

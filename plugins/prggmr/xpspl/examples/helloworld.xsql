@@ -1,0 +1,3 @@
+# inifintly wait 50us signaling helloworld if signal world is active
+INF WAIT 50us 
+    SIG helloworld WHEN world.state IS ACTIVE

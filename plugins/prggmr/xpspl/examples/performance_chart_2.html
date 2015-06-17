@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+    google.load("visualization", "1", {packages:["corechart"]});
+    google.setOnLoadCallback(drawChart);
+    function drawChart(){
+    var Runningafunction = [["Time in us", "Running a function"]];
+Runningafunction.push([2, 9.5367431640625E-7]);
+Runningafunction.push([4, 9.5367431640625E-7]);
+Runningafunction.push([8, 9.5367431640625E-7]);
+Runningafunction.push([16, 9.5367431640625E-7]);
+Runningafunction.push([32, 3.0994415283203E-6]);
+Runningafunction.push([64, 5.9604644775391E-6]);
+Runningafunction.push([128, 1.0967254638672E-5]);
+Runningafunction.push([256, 3.0994415283203E-5]);
+Runningafunction.push([512, 5.6028366088867E-5]);
+Runningafunction.push([1024, 0.00010514259338379]);
+Runningafunction.push([2048, 0.00017309188842773]);
+Runningafunction.push([4096, 0.00030708312988281]);
+Runningafunction.push([8192, 0.00063896179199219]);
+Runningafunction.push([16384, 0.0013840198516846]);
+Runningafunction.push([32768, 0.0026779174804688]);
+Runningafunction.push([65536, 0.0049710273742676]);
+Runningafunction.push([131072, 0.010851144790649]);
+Runningafunction.push([262144, 0.023564100265503]);
+Runningafunction.push([524288, 0.043594121932983]);
+Runningafunction.push([1048576, 0.005628032684326]);
+Runningafunction.push([2097152, 0.1723530292511]);
+Runningafunction.push([5097152, 0.0423530292511]);
+var Runningafunction_graph = google.visualization.arrayToDataTable(Runningafunction);
+var Runningafunction_chart = new google.visualization.LineChart(document.getElementById("Runningafunction"));
+Runningafunction_chart.draw(Runningafunction_graph, {title: "Time taken (us)"});
+    }
+    </script>
+  </head>
+  <body>
+    <div id="Runningafunction" style="width: 1200px; height: 750px; float:left;"></div>  </body>
+</html>

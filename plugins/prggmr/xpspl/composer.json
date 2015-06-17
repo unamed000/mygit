@@ -1,0 +1,40 @@
+{
+    "name": "prggmr/xpspl",
+    "type": "library",
+    "description": "Signals for PHP",
+    "homepage": "http://prggmr.com",
+    "keywords": [
+        "signal",
+        "signals",
+        "event",
+        "events",
+        "sockets",
+        "io",
+        "non blocking",
+        "non blocking io",
+        "ftp",
+        "non-blocking ftp",
+        "time",
+        "timer",
+        "timed event",
+        "http",
+        "tcp",
+        "udp",
+        "event dispatcher", 
+        "event processor",
+        "complex event processor",
+        "complex event processing",
+        "signal library"
+    ],
+    "license": "Apache 2.0",
+    "authors": [
+        {
+            "name": "Nickolas Whiting",
+            "email": "prggmr@gmail.com",
+            "homepage": "http://prggmr.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0"
+    }
+}

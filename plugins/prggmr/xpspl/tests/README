@@ -1,0 +1,11 @@
+# XPSPL's unit tests
+
+XPSPL's unit tests are written using XPSPL's unittest module.
+
+To run all tests.
+
+    xpspl all.php
+
+Most tests can also be run alone.
+
+    xpspl filename.php

@@ -1,0 +1,53 @@
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+    google.load("visualization", "1", {packages:["corechart"]});
+    google.setOnLoadCallback(drawChart);
+    function drawChart(){
+    var SignalsEmitted = [["Time in us", "Signals Emitted"]];
+SignalsEmitted.push([2, 1.0013580322266E-5]);
+SignalsEmitted.push([4, 1.6212463378906E-5]);
+SignalsEmitted.push([8, 3.814697265625E-5]);
+SignalsEmitted.push([16, 6.5088272094727E-5]);
+SignalsEmitted.push([32, 0.00012803077697754]);
+SignalsEmitted.push([64, 0.00024795532226562]);
+SignalsEmitted.push([128, 0.00050902366638184]);
+SignalsEmitted.push([256, 0.0010061264038086]);
+SignalsEmitted.push([512, 0.0018599033355713]);
+SignalsEmitted.push([1024, 0.0036218166351318]);
+SignalsEmitted.push([2048, 0.0077300071716309]);
+SignalsEmitted.push([4096, 0.01442289352417]);
+SignalsEmitted.push([8192, 0.033911943435669]);
+SignalsEmitted.push([16384, 0.064631938934326]);
+SignalsEmitted.push([32768, 0.13624811172485]);
+SignalsEmitted.push([65536, 0.24982690811157]);
+var SignalsEmitted_graph = google.visualization.arrayToDataTable(SignalsEmitted);
+var SignalsEmitted_chart = new google.visualization.LineChart(document.getElementById("SignalsEmitted"));
+SignalsEmitted_chart.draw(SignalsEmitted_graph, {title: "Time taken (us)"});
+var LoopsPerformed = [["Time in us", "Loops Performed"]];
+LoopsPerformed.push([2, 2.6941299438477E-5]);
+LoopsPerformed.push([4, 4.6014785766602E-5]);
+LoopsPerformed.push([8, 9.7990036010742E-5]);
+LoopsPerformed.push([16, 0.00023293495178223]);
+LoopsPerformed.push([32, 0.00040102005004883]);
+LoopsPerformed.push([64, 0.00080704689025879]);
+LoopsPerformed.push([128, 0.0015051364898682]);
+LoopsPerformed.push([256, 0.0028188228607178]);
+LoopsPerformed.push([512, 0.0056350231170654]);
+LoopsPerformed.push([1024, 0.010035037994385]);
+LoopsPerformed.push([2048, 0.022629976272583]);
+LoopsPerformed.push([4096, 0.047948837280273]);
+LoopsPerformed.push([8192, 0.087502956390381]);
+LoopsPerformed.push([16384, 0.17573809623718]);
+LoopsPerformed.push([32768, 0.34006786346436]);
+LoopsPerformed.push([65536, 0.67971515655518]);
+var LoopsPerformed_graph = google.visualization.arrayToDataTable(LoopsPerformed);
+var LoopsPerformed_chart = new google.visualization.LineChart(document.getElementById("LoopsPerformed"));
+LoopsPerformed_chart.draw(LoopsPerformed_graph, {title: "Time taken (us)"});
+    }
+    </script>
+  </head>
+  <body>
+    <div id="SignalsEmitted" style="width: 800px; height: 500px; float:left;"></div><div id="LoopsPerformed" style="width: 800px; height: 500px; float:left;"></div>  </body>
+</html>
